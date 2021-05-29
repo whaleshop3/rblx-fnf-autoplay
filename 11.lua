@@ -169,7 +169,7 @@ runService:BindToRenderStep(shared._id, 1, function()
 end)
 
 local window = library:CreateWindow('펑키 프라이데이') do
-	local folder = window:AddFolder('메인(오토플레이,자동플레이)') do
+	local folder = window:AddFolder('메인(오토플레이)') do
 		folder:AddToggle({ text = '오토 플레이', flag = 'autoPlayer' })
 
 		folder:AddSlider({ text = 'Sick %', flag = 'sickChance', min = 0, max = 100, value = 100 })
