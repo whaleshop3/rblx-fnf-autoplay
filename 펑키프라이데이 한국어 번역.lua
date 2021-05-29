@@ -1,0 +1,11 @@
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/whaleshop3/rblx-fnf-autoplay/main/README.md",true))()
+ local message = Instance.new("Message", workspace)
+        message.Text = "웨일이 만들었음(Made By Whale)"
+        wait(4.5)
+        message:Destroy()
